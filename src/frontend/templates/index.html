@@ -1,6 +1,5 @@
 <!--
 Copyright 2020 Google LLC
-Modified 2024 for HCB Finance branding
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -163,35 +162,39 @@ limitations under the License.
                       <p>{{ format_timestamp_month(t.timestamp) }} {{ format_timestamp_day(t.timestamp) }}</p>
                     </td>
                     {% if t.toAccountNum == account_id %}
-                    <td class="text-credit">
-                      <span class="material-icons">add</span>Credit
-                    </td>
-                    <td class="transaction-account-id">
-                      <p>{{ t.fromAccountNum }}</p>
-                    </td>
-                    {% else %}
-                    <td class="text-debit">
-                      <span class="material-icons">remove</span>Debit
-                    </td>
-                    <td class="transaction-account-id">
-                      <p>{{ t.toAccountNum }}</p>
-                    </td>
-                    {% endif %}
-                    <td class="transaction-label">
-                      {% if t.accountLabel %}
-                      <p>{{ t.accountLabel }}</p>
-                      {% else %}
-                      <p class="transaction-label-none">---</p>
-                      {% endif %}
-                    </td>
-                    {% if t.toAccountNum == account_id %}
-                    <td class="transaction-amount transaction-amount-credit">
-                      <p>{{ format_currency(t.amount) }}</p>
-                    </td>
-                    {% else %}
-                    <td class="transaction-amount transaction-amount-debit">
+                      <td class="transaction-type">
+                        <span class="text-debit">●</span> Credit
+                      </td>
+                      <td class="transaction-account">
+                        {{ t.fromAccountNum }}
+                      </td>
+                      <td class="transaction-label">
+                        {% if t.accountLabel != None %}
+                          {{ t.accountLabel }}
+                        {% else %}
+                          <span class="transaction-label-none">None</span>
+                        {% endif %}
+                      </td>
+                      <td class="transaction-amount transaction-amount-credit">
+                        +{{ format_currency(t.amount) }}
+                      </td>
+                    {% elif t.fromAccountNum == account_id %}
+                      <td class="transaction-type">
+                        <span class="text-credit">●</span> Debit
+                      </td>
+                      <td class="transaction-account">
+                        {{ t.toAccountNum }}
+                      </td>
+                      <td class="transaction-label">
+                        {% if t.accountLabel != None %}
+                          {{ t.accountLabel }}
+                        {% else %}
+                          <span class="transaction-label-none">None</span>
+                        {% endif %}
+                      </td>
+                      <td class="transaction-amount transaction-amount-debit">
                         -{{ format_currency(t.amount) }}
-                    </td>
+                      </td>
                     {% endif %}
                   </tr>
                 {% endfor %}
@@ -202,7 +205,6 @@ limitations under the License.
           </div>
         </div>
       </div>
-    </div>
 
       <!-- Deposit Modal -->
       <div class="modal fade" id="depositFunds" tabindex="-1" role="dialog" aria-hidden="true">

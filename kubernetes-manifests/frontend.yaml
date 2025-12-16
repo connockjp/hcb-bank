@@ -66,8 +66,6 @@ spec:
         - env:
             - name: VERSION
               value: v0.6.8
-            - name: HCB-LOGO
-              value: "true"
             - name: PORT
               value: "8080"
             - name: ENABLE_TRACING
