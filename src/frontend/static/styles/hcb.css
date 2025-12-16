@@ -1,0 +1,630 @@
+/**
+ * HCB Finance - Rebranded CSS
+ * Based on French Connections HCB brand colors
+ * 
+ * Color Palette:
+ * - Primary Navy: #2C4A5E
+ * - Secondary Grey: #6B7B8C  
+ * - French Red: #C8102E
+ * - French Blue: #002654
+ * - Light Accent: #E8EEF2
+ */
+
+:root {
+  --hcb-navy: #2C4A5E;
+  --hcb-navy-dark: #1E3344;
+  --hcb-navy-light: #3D5A6E;
+  --hcb-grey: #6B7B8C;
+  --hcb-grey-light: #8A9AA8;
+  --hcb-red: #C8102E;
+  --hcb-red-dark: #A00D24;
+  --hcb-blue: #002654;
+  --hcb-light-bg: #F5F7F9;
+  --hcb-border: #E8EEF2;
+  --hcb-text: #2C3E50;
+  --hcb-text-muted: #6B7B8C;
+  --hcb-success: #28A745;
+  --hcb-white: #FFFFFF;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+  background-color: var(--hcb-white) !important;
+  color: var(--hcb-text);
+}
+
+p {
+  margin-bottom: 0rem !important;
+}
+
+small {
+  font-size: 0.9rem;
+}
+
+.pop-up-label {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--hcb-text);
+}
+
+label {
+  font-size: 0.9rem;
+}
+
+/* MATERIAL ICONS */
+.material-icons {
+  color: var(--hcb-navy);
+  vertical-align: middle !important;
+}
+
+.button-icon {
+  font-size: 24px;
+  color: var(--hcb-navy);
+}
+
+.money-icon {
+  font-size: 24px;
+  color: var(--hcb-navy);
+}
+
+.modal-icon {
+  font-size: 18px !important;
+  margin-right: 8px;
+  width: 18px;
+  color: var(--hcb-navy);
+}
+
+.arrow-back {
+  font-size: 15px;
+  color: var(--hcb-navy);
+}
+
+#deposit-icon {
+  color: white !important;
+  vertical-align: middle !important;
+}
+
+#payment-icon {
+  color: white !important;
+  vertical-align: middle !important;
+}
+
+/* TOP NAVIGATION */
+.header {
+  margin-bottom: 2rem;
+}
+
+.header-title, .card-header-title {
+  font-weight: 500;
+  color: var(--hcb-text);
+}
+
+#hcb-logo {
+  max-width: 200px;
+  max-height: 60px;
+  vertical-align: middle;
+}
+
+/* Legacy cymbal logo support */
+#cymbal-logo {
+  max-width: 200px;
+  max-height: 60px;
+  vertical-align: middle;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-top {
+  background-color: var(--hcb-white);
+  min-height: 80px;
+  color: var(--hcb-text);
+  position: relative;
+  border-bottom: 1px solid var(--hcb-border);
+}
+
+.nav-item {
+  font-size: 24px !important;
+  margin: auto;
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: var(--hcb-text);
+  text-transform: none !important;
+  font-size: 1rem !important;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem !important;
+  letter-spacing: -0.04em !important;
+  color: var(--hcb-navy) !important;
+}
+
+.nav-link i {
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  color: var(--hcb-navy);
+  transition: all 0.2s ease-in;
+}
+
+#account-user-name {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--hcb-text);
+}
+
+.account-user-avatar {
+  margin-right: 5px;
+}
+
+#logout-form a:hover {
+  cursor: pointer;
+}
+
+.fa-icon-spacer {
+  margin-left: 8px;
+}
+
+.header-body {
+  padding-top: 1.5rem;
+}
+
+#popup {
+  top: 0;
+  bottom: 100px;
+  position: absolute;
+}
+
+/* FOOTER */
+.footer {
+  color: var(--hcb-text);
+  background-color: var(--hcb-white);
+  border-top: 2px solid var(--hcb-border);
+  bottom: 0;
+  padding: 20px 24px 20px;
+  right: 0;
+}
+
+.footer a {
+  color: var(--hcb-navy);
+}
+
+.footer a:hover {
+  color: var(--hcb-navy-dark);
+}
+
+/* CARDS */
+.card {
+  color: var(--hcb-text);
+  background-color: var(--hcb-light-bg);
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--hcb-border);
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.card-icon {
+  font-size: 36px !important;
+  color: var(--hcb-navy-light);
+}
+
+/* ACCOUNT HOME */
+.account-info {
+  font-size: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.account-overview {
+  margin-right: 5px;
+  font-size: 24px;
+}
+
+.account-icon {
+  vertical-align: middle !important;
+  color: var(--hcb-grey);
+}
+
+.account-num-text {
+  font-weight: 600;
+  margin-right: 8px;
+  vertical-align: middle !important;
+  display: inline-block !important;
+}
+
+.account-number {
+  font-weight: 200;
+  vertical-align: middle !important;
+  display: inline-block !important;
+}
+
+/* TRANSACTION TABLE */
+.card-table {
+  margin-bottom: 0 !important;
+}
+
+.card-table tbody td:first-child, .card-table thead th:first-child {
+  padding-left: 1.5rem !important;
+}
+
+.card-table-header {
+  padding: 1.5rem 1.5rem;
+  margin-bottom: 0;
+  background-color: transparent;
+}
+
+.table-sm td, .table-sm th {
+  padding: 1.1rem !important;
+}
+
+.table td {
+  vertical-align: middle !important;
+  font-size: 1.05rem !important;
+}
+
+.table thead th {
+  color: var(--hcb-text);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .08em;
+  border-bottom-width: 1px;
+  border-color: var(--hcb-border);
+}
+
+.table [data-sort]::after {
+  margin-left: .25rem;
+}
+
+.list tr:hover {
+  transition: all 0.3s ease-in;
+  background-color: var(--hcb-border);
+}
+
+.text-credit {
+  color: var(--hcb-red);
+}
+
+.text-debit {
+  color: var(--hcb-success);
+}
+
+.transaction-amount {
+  text-align: right !important;
+}
+
+.transaction-amount-credit {
+  color: var(--hcb-success);
+}
+
+.transaction-amount-debit {
+  color: var(--hcb-red);
+}
+
+.transaction-label-none {
+  color: var(--hcb-text);
+}
+
+.text-transaction-header {
+  color: var(--hcb-text);
+}
+
+.date-month {
+  margin-right: 5px;
+}
+
+/* HOME - DEPOSIT / MAKE PAYMENT POP-UPS */
+.modal-header {
+  padding-bottom: 1rem !important;
+  border-bottom: 1px solid var(--hcb-border);
+}
+
+.modal-content .modal-body {
+  padding: 20px 24px 0px;
+}
+
+.amount-font {
+  font-size: 28px !important;
+}
+
+.amount-font::-webkit-input-placeholder {
+  font-size: 28px !important;
+}
+
+.custom-select:focus {
+  outline: 0;
+  box-shadow: 0px 1px 3px var(--hcb-navy-light);
+  border-color: var(--hcb-navy);
+}
+
+.invalid-feedback {
+  color: var(--hcb-red);
+  font-size: 1.05rem;
+}
+
+/* SIGN IN PAGE */
+.sign-in i {
+  color: var(--hcb-navy);
+  font-size: 1.125rem;
+}
+
+.sign-in input {
+  color: var(--hcb-text);
+  font-size: 1.15rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* BUTTONS */
+.btn, .btn-primary, .card-button, .btn-block, form button {
+  align-items: center;
+  background: var(--hcb-navy) !important;
+  color: white !important;
+  border-radius: 50px;
+  font-weight: 500 !important;
+  text-transform: capitalize !important;
+  border: none;
+}
+
+.btn-deny {
+  background: var(--hcb-red) !important;
+}
+
+.btn-secondary {
+  background-color: var(--hcb-white) !important;
+  color: var(--hcb-navy) !important;
+  border: 2px solid var(--hcb-navy) !important;
+}
+
+.btn:hover, .card-button:hover, .btn-primary:hover, .btn-secondary:hover, 
+.btn:focus, .btn-primary:focus, .btn-secondary:focus {
+  cursor: pointer !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.btn:hover, .card-button:hover, .btn-primary:hover, 
+.btn:focus, .btn-primary:focus {
+  background-color: var(--hcb-navy-dark) !important;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color: var(--hcb-light-bg) !important;
+}
+
+.btn:active, .card-button:active, .btn-primary:active, .btn-secondary:active {
+  background-color: var(--hcb-navy-light) !important;
+  border: 1px solid var(--hcb-navy-light) !important;
+}
+
+.btn-primary.custom-file-control:before, .btn.btn-primary {
+  background-color: var(--hcb-navy) !important;
+  color: white !important;
+  border-radius: 50px;
+}
+
+.btn-secondary.custom-file-control:before, .btn.btn-secondary {
+  background-color: var(--hcb-white) !important;
+  color: var(--hcb-navy) !important;
+  border: 2px solid var(--hcb-navy);
+}
+
+.btn-primary.custom-file-control:focus, .btn-primary.custom-file-control:hover {
+  background-color: var(--hcb-navy-dark) !important;
+}
+
+.btn-primary.custom-file-control:active, .btn-primary.custom-file-control:active, 
+.btn-secondary.custom-file-control:active, .btn.btn-secondary:active {
+  background-color: var(--hcb-navy-light) !important;
+  border: 1px solid var(--hcb-navy-light) !important;
+}
+
+/* Button styling for action cards */
+.deposit-send-button {
+  margin-left: 0.5rem !important;
+}
+
+.deposit-send-payment-div {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.account-number-div {
+  vertical-align: middle;
+}
+
+/* FORMS */
+.form-control:focus {
+  background-color: white !important;
+  border-color: var(--hcb-navy) !important;
+  box-shadow: 0 0 0 0.2rem rgba(44, 74, 94, 0.25) !important;
+}
+
+input .form-control {
+  background-color: var(--hcb-light-bg) !important;
+}
+
+input {
+  background-color: rgba(0,0,0,0) !important;
+  border: none !important;
+}
+
+.custom-file-control, .form-control, .is-focused .custom-file-control, .is-focused .form-control {
+  background-image: linear-gradient(0deg, var(--hcb-navy) 2px, rgba(0,150,136,0) 0), 
+                    linear-gradient(0deg, rgba(0,0,0,.26) 1px, transparent 0);
+}
+
+.custom-file-control:invalid, .form-control:invalid {
+  background-image: linear-gradient(0deg, var(--hcb-red) 2px, rgba(213,0,0,0) 0), 
+                    linear-gradient(0deg, rgba(0,0,0,.26) 1px, transparent 0);
+}
+
+/* Close buttons in modals */
+.close, .deposit-cancel .payment-cancel {
+  background-color: Transparent !important;
+  background-repeat: no-repeat !important;
+  overflow: hidden !important;
+  outline: none !important;
+  border: none !important;
+  color: var(--hcb-text) !important;
+}
+
+/* Snackbar / Toast notifications */
+.snackbar-body {
+  padding-bottom: 1em;
+  padding-top: 1em;
+  vertical-align: middle !important;
+}
+
+.snackbar-card {
+  margin-top: 25px;
+  background-color: var(--hcb-navy) !important;
+  color: white !important;
+  margin-bottom: 0px;
+  border-radius: 10px;
+  font-weight: 500;
+  -webkit-box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+  -moz-box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+}
+
+.snackbar-close {
+  background-color: Transparent !important;
+  background-repeat: no-repeat !important;
+  overflow: hidden !important;
+  outline: none !important;
+  border: none !important;
+  color: var(--hcb-border) !important;
+  vertical-align: middle !important;
+}
+
+.snackbar-close:hover {
+  cursor: pointer;
+  color: var(--hcb-white) !important;
+}
+
+/* Alert styling */
+.alert-danger {
+  background-color: var(--hcb-red) !important;
+  color: white !important;
+  border: none;
+}
+
+.alert-info {
+  background-color: var(--hcb-navy) !important;
+  color: white !important;
+  border: none;
+}
+
+.error-icon {
+  color: white !important;
+}
+
+.top-row {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.alert-message-container {
+  margin-bottom: 0px;
+  display: flex;
+}
+
+.check-mark-container {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+/* Current balance highlight */
+.current-balance {
+  color: var(--hcb-navy);
+  font-weight: 600;
+}
+
+/* Secondary text styling */
+.secondary-text {
+  color: var(--hcb-text-muted) !important;
+}
+
+.text-muted {
+  color: var(--hcb-text-muted) !important;
+}
+
+/* Link styling */
+a {
+  color: var(--hcb-navy);
+}
+
+a:hover {
+  color: var(--hcb-navy-dark);
+  text-decoration: none;
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+  border: 1px solid var(--hcb-border);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.dropdown-item:hover {
+  background-color: var(--hcb-light-bg);
+  color: var(--hcb-navy);
+}
+
+/* Custom select styling */
+.custom-select {
+  border: 1px solid var(--hcb-border);
+  border-radius: 8px;
+}
+
+.custom-select:focus {
+  border-color: var(--hcb-navy);
+}
+
+/* Input group styling */
+.input-group-text {
+  background-color: var(--hcb-light-bg);
+  border: 1px solid var(--hcb-border);
+  color: var(--hcb-navy);
+}
+
+/* Welcome page specific styling */
+.sign-in .card {
+  border: 1px solid var(--hcb-border);
+  background-color: var(--hcb-white);
+}
+
+.btn-sign-in {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+}
+
+/* Table striping for better readability */
+.table tbody tr:nth-of-type(odd) {
+  background-color: rgba(44, 74, 94, 0.03);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #hcb-logo, #cymbal-logo {
+    max-width: 150px;
+    max-height: 45px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.2rem !important;
+  }
+}

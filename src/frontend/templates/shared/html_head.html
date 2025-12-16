@@ -1,18 +1,40 @@
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  {% if cymbal_logo == "true" %}
-    <title>CymbalBank</title>
-  {% else %}
-    <title>{{ bank_name }}</title>
-  {% endif %}
-    <link rel="icon" href="static/img/favicon.png"/>
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="static/styles/cymbal.css">
-  {% if platform_name is not none %}
-    <link rel="stylesheet" href="static/styles/platform.css">
-    <link rel="stylesheet" href="static/styles/platform/{{ platform }}.css">
-  {% endif %}
+<!--
+Copyright 2020 Google LLC
+Modified 2024 for HCB Finance branding
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>{{ bank_name }}</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="static/img/favicon.png">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+<!-- CSS Libraries -->
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" 
+      integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+
+<!-- HCB Finance Custom Styles -->
+<link rel="stylesheet" href="static/css/hcb.css">
+
+<!-- Platform-specific styles -->
+{% if platform %}
+<link rel="stylesheet" href="static/css/platform.css">
+{% endif %}
